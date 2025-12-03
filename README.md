@@ -1,8 +1,8 @@
 # Practice
 
-## Домашнее задание - Последовательность команд Git
+## Последовательность команд Git
 
-Этот файл содержит последовательность команд Git, которые использовались для выполнения домашнего задания.
+Этот файл содержит последовательность команд Git.
 
 ### Клонирование репозитория
 
@@ -19,9 +19,6 @@ git add home_task.sql
 git commit -m "Added answer for first homework"
 git push origin homework1
 ```
-
-**Примечание:** При первой попытке `git push` возникла ошибка о том, что ветка не имеет upstream. Была использована команда `git push origin homework1` для установки upstream.
-
 ### Домашнее задание 2 (homework2)
 
 ```bash
@@ -50,19 +47,16 @@ git push origin homework3
 - `third_homework/problems.md`
 - `third_homework/Царенко_Даниил_7.yaml`
 
-### Первое задание Node.js (first_node)
+### Первое задание Node.js 
 
 ```bash
 git checkout -b first_node
-git add home_task.sql
 git add home_task.md
 git commit -m "Added answer for first node homework"
 git push origin first_node
 ```
 
-**Примечание:** При первом коммите был добавлен только `home_task.sql`, но Git обнаружил неотслеживаемый файл `home_task.md`, который был добавлен отдельной командой `git add`.
-
-### Второе задание Node.js (second_node)
+### Второе задание Node.js 
 
 ```bash
 git checkout -b second_node
@@ -71,7 +65,7 @@ git commit -m "Added answer for second node homework"
 git push origin second_node
 ```
 
-### Третье задание Node.js (third_node)
+### Третье задание Node.js 
 
 ```bash
 git checkout -b third_node
@@ -79,10 +73,3 @@ git add server_task.md
 git commit -m "Added answer for third node homework"
 git push origin third_node
 ```
-
-## Общие примечания
-
-- При добавлении файлов Git предупреждал о замене LF на CRLF (это нормально для Windows)
-- Для первой ветки `homework1` потребовалось использовать `git push origin homework1` для установки upstream
-- Для остальных веток команда `git push origin <branch_name>` работала автоматически
-- Все ветки были успешно отправлены в удаленный репозиторий на GitHub
